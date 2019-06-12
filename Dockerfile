@@ -101,4 +101,4 @@ RUN wget -nv https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-c
 # Removed the changes to config/kube_config_test.py since they do not patch cleanly and are not required.
 COPY kubernetes-client-79.diff /tmp/79.diff
 RUN cd $(python -c 'import kubernetes.config, inspect, re; print(re.sub(r"/kubernetes/config/.*", "/kubernetes/", inspect.getfile(kubernetes.config)))') \
-   && patch -p1 < /tmp/79.diff
+&& patch -p1 < /tmp/79.diff
