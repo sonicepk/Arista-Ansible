@@ -5,7 +5,7 @@ has been deleted.
 
 Creating my own version just to have a snap shot as of the 12/6/2019
 
-##Original Docker Image
+## Original Docker Image
 https://hub.docker.com/r/aristanetworks/ansible/Dockerfile
 
 **To run an ansible playbook using this image use**
@@ -14,8 +14,8 @@ docker run -it --rm -v $PWD:/home/prod aristanetworks/ansible ansible-playbook
 yourplaybook.yaml -i hosts -l some_device -f 70
 
 **Help:**
+````
 docker run -it --rm -v $PWD:/home/prod aristanetworks/ansible /usr/bin/dumb-init --help
-
 dumb-init v1.2.0
 Usage: /usr/bin/dumb-init [option] command [[arg] ...]
 
@@ -34,4 +34,4 @@ Optional arguments:
    -V, --version        Print the current version and exit.
 
 Full help is available online at https://github.com/Yelp/dumb-init
-
+````
