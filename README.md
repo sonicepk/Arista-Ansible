@@ -14,14 +14,15 @@ yourplaybook.yaml -i hosts -l some_device -f 70
 
 Help:
 
-docker run -it --rm -v $PWD:/home/prod aristanetworks/ansible /usr/bin/dumb-init --help
+ docker run -it --rm -v $PWD:/home/prod aristanetworks/ansible /usr/bin/dumb-init --help
+
 dumb-init v1.2.0
-Usage: /usr/bin/dumb-init [option] command [[arg] ...]
+ Usage: /usr/bin/dumb-init [option] command [[arg] ...]
 
-dumb-init is a simple process supervisor that forwards signals to children.
-It is designed to run as PID1 in minimal container environments.
+ dumb-init is a simple process supervisor that forwards signals to children.
+ It is designed to run as PID1 in minimal container environments.
 
-Optional arguments:
+ Optional arguments:
    -c, --single-child   Run in single-child mode.
                         In this mode, signals are only proxied to the
                         direct child and not any of its descendants.
@@ -32,5 +33,5 @@ Optional arguments:
    -h, --help           Print this help message and exit.
    -V, --version        Print the current version and exit.
 
-Full help is available online at https://github.com/Yelp/dumb-init
+ Full help is available online at https://github.com/Yelp/dumb-init
 
