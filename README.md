@@ -10,7 +10,7 @@ https://hub.docker.com/r/aristanetworks/ansible/Dockerfile
 
 **To run an ansible playbook using this image use**
 
-docker run -it --rm -v $PWD:/home/prod aristanetworks/ansible ansible-playbook
+docker run -it --rm -v $PWD:/home/prod sonicepk/arista-ansible ansible-playbook
 yourplaybook.yaml -i hosts -l some_device -f 70
 
 **Help:**
